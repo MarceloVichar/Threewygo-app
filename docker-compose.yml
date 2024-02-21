@@ -1,0 +1,54 @@
+version: '3'
+
+volumes:
+  app-postgres-data:
+    driver: local
+
+services:
+  ui:
+    container_name: ${APP_NAME}-ui
+    user: ${APP_UID}:${APP_GID}
+    build:
+      context: ./ui
+      dockerfile: Dockerfile
+    volumes:
+      - ./ui:/home/node/app
+    ports:
+      - ${UI_PORT}:3000
+
+  api:
+    container_name: ${APP_NAME}-app
+    user: ${APP_UID}:${APP_GID}
+    image: webdevops/php-nginx:8.2-alpine
+    volumes:
+      - ./api:/app
+    working_dir: /app
+    ports:
+      - ${API_PORT}:80
+    environment:
+      - WEB_DOCUMENT_ROOT=/app/public
+      - PHP_MEMORY_LIMIT=${API_MEMORY_LIMIT}
+      - php.opcache.enable_cli=1
+
+  postgres:
+    container_name: ${APP_NAME}-postgres
+    image: postgres:16-alpine
+    volumes:
+      - app-postgres-data:/var/lib/postgresql/data
+    environment:
+      - POSTGRES_DB=${POSTGRES_DB}
+      - POSTGRES_USER=${POSTGRES_USER}
+      - POSTGRES_PASSWORD=${POSTGRES_PASSWORD}
+    ports:
+      - ${POSTGRES_PORT}:5432
+
+  postgres-test:
+    image: postgres:16-alpine
+    environment:
+      - POSTGRES_DB=${POSTGRES_TEST_DB}
+      - POSTGRES_USER=${POSTGRES_TEST_USER}
+      - POSTGRES_PASSWORD=${POSTGRES_TEST_PASSWORD}
+    tmpfs:
+      - /var/lib/postgresql/data
+    ports:
+      - ${POSTGRES_TEST_PORT}:5432

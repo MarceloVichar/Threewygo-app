@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+    html {
+        @apply box-border;
+    }
+
+    body {
+        @apply font-sans h-full tracking-wider antialiased text-base-content;
+    }
+
+    #app, #__nuxt {
+        @apply h-full;
+    }
+
+    #__layout {
+        @apply h-screen;
+    }
+
+    *, *:before, *:after {
+        box-sizing: inherit;
+    }
+}
+
+html, body, #__nuxt {
+    height: 100%;
+    font-family: "Montserrat Light", sans-serif;
+}
