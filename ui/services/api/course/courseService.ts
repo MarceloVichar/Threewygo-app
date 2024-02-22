@@ -9,6 +9,11 @@ export const getCourses = async (params?: object) => {
   }
 }
 
+export const getCourse = async (id: number|string, params?: object) => {
+  const response = await useAxios().get(`/api/courses/${id}`, {params})
+  return new GetCourseData(response?.data)
+}
+
 export const createCourse = async ( data: object) => {
   return await useAxios().post(`/api/courses`, data, {
     headers: {

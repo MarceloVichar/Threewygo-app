@@ -33,6 +33,8 @@ class CourseController extends Controller
 
     public function show(Course $course)
     {
+        $course->loadMissing(['videos']);
+
         return response()->json(CourseResource::make($course), 200);
     }
 

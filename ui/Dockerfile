@@ -8,6 +8,10 @@ COPY --chown=node:node package*.json ./
 
 USER node
 
-COPY --chown=node:node . .
+COPY --chown=node:node .. .
+
+RUN npm install
+
+#ENTRYPOINT ["npm", "run", "dev"]
 
 CMD ["tail", "-f", "/dev/null"]

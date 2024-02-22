@@ -28,8 +28,8 @@
         {{ item.description }}
       </p>
       <div class="w-full flex">
-        <button class="btn btn-primary grow">
-          Ver curso
+        <button class="btn btn-primary grow" @click="$emit('show', item)">
+          Assistir
         </button>
       </div>
     </div>
@@ -46,5 +46,5 @@ defineProps({
   },
 })
 
-defineEmits(['edit', 'delete'])
+defineEmits(['edit', 'show', 'delete'])
 </script>

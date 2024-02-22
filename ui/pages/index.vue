@@ -1,8 +1,8 @@
 <template>
   <div class="w-full">
-    <div class="flex justify-between gap-2 items-center my-2 w-full">
+    <div class="flex flex-col sm:flex-row justify-between gap-2 items-center my-4 w-full">
       <h2 class="text-center font-bold text-2xl ">
-        Meus cursos
+        Cursos disponíveis
       </h2>
       <button class="btn btn-primary" @click="createCourse">
         Adicionar curso
@@ -19,6 +19,7 @@
           :item="course"
           @edit="updateCourse"
           @delete="deleteCourse"
+          @show="navigateTo(`/courses/${$event?.id}`)"
         />
       </div>
       <Pagination

@@ -1,37 +1,32 @@
-import type {GetVideoData} from '~/services/api/video/GetVideoData';
-
-type GetCourseType = {
+type GetVideoType = {
     id?: number,
     title?: string,
     description?: string,
-    start_date?: string,
-    end_date?: string,
     created_at?: string,
     updated_at?: string,
     image_url?: string,
-    videos?: GetVideoData[],
+    video_url?: string,
+    course_id?: number|string,
 }
 
-export class GetCourseData {
+export class GetVideoData {
   public id: number;
   public title: string;
   public description: string;
-  public start_date: string;
-  public end_date: string;
   public created_at: string;
   public updated_at: string;
   public image_url: string;
-  public videos: GetVideoData[];
+  public video_url: string;
+  public course_id: number|string;
 
-  constructor(data: GetCourseType) {
+  constructor(data: GetVideoType) {
     this.id = data.id || 0;
     this.title = data.title || '';
     this.description = data.description || '';
-    this.start_date = data.start_date || '';
-    this.end_date = data.end_date || '';
     this.created_at = data.created_at || '';
     this.updated_at = data.updated_at || '';
     this.image_url = data.image_url || '';
-    this.videos = data.videos || [];
+    this.video_url = data.video_url || '';
+    this.course_id = data.course_id || '';
   }
 }

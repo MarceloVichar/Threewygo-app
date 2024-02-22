@@ -35,7 +35,7 @@ class VideoRequest extends FormRequest
                 'required',
                 File::types(['mp4'])
                     ->min(1)
-                    ->max(40960)
+                    ->max(102400)
             ];
         }
 

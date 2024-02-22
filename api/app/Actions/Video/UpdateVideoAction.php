@@ -13,11 +13,11 @@ class UpdateVideoAction
             ->update($data->toArray());
 
         if ((bool)$data->image) {
-            $video->clearMediaCollection('course_images');
+            $video->clearMediaCollection('video_images');
 
             $video->addMedia($data->image)
                 ->usingFileName("course-$video->id.png")
-                ->toMediaCollection('course_images');
+                ->toMediaCollection('video_images');
         }
 
         return $video;

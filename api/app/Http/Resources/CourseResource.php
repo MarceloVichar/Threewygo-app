@@ -15,6 +15,7 @@ class CourseResource extends JsonResource
             'start_date' => output_date_format($this->start_date),
             'end_date' => output_date_format($this->end_date),
             'image_url' => $this->getImageAttribute(),
+            'videos' => VideoResource::collection($this->whenLoaded('videos')),
             'created_at' => output_date_format($this->created_at),
             'updated_at' => output_date_format($this->updated_at),
         ];
