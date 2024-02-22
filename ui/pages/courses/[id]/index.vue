@@ -40,7 +40,6 @@
 </template>
 
 <script setup lang="ts">
-import {getCourse} from '~/services/api/course/courseService';
 import VideoCard from '~/components/app/videos/VideoCard.vue';
 import CreateVideoComponent from '~/components/app/videos/CreateVideo.vue';
 import DeleteVideo from '~/components/app/videos/DeleteVideo.vue';
@@ -48,6 +47,7 @@ import EditVideo from '~/components/app/videos/EditVideo.vue';
 import Loader from '~/components/shared/Loader.vue';
 
 const route = useRoute()
+const courseStore = useCourses()
 
 const modal = reactive({
   component: null,
@@ -55,7 +55,8 @@ const modal = reactive({
 })
 
 async function fetchVideos() {
-  return await getCourse(route.params?.id?.toString())
+  await courseStore.ensureCourse(route.params?.id?.toString())
+  return courseStore.currentCourse
 }
 
 const {pending, data, refresh} = useLazyAsyncData('course', fetchVideos)
