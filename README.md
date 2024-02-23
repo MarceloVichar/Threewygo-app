@@ -50,10 +50,12 @@ $> docker compose up -d --remove-orphans
 $> docker compose stop
 ```
 
-#### Utilização do ambiente
+#### Utilização do servidor de desenvolvimento
 
-Para acessar a aplicação, basta acessar o localhost na porta que vc definiu como `UI_PORT` no arquivo `.env`. Por padrão:
+Por padrão, a API já vem o servidor ativo quando os contâineres são iniciados. Para subir o ambiente da interface, rode o seguinte comando:
 
 ```bash
-$> localhost:3001
+$> docker compose exec ui npm i && npm run dev
 ```
+
+Agora, é necessário apenas acessar a porta que vc destinou a interface no arquivo `.env`, por padrão: `localhost:3001`
