@@ -5,22 +5,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7e108146-28d2-409f-a2d4-393bf777bcf0" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/ui/plugins/notify.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/app/Actions/Metrics/GetCoursesMetricsAction.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ui/components/app/metrics/CoursesTable.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ui/components/shared/CustomTable.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ui/pages/metrics/index.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ui/services/api/metrics/GetMetricsData.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/app/Models/Video.php" beforeDir="false" afterPath="$PROJECT_DIR$/api/app/Models/Video.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ui/components/app/courses/CreateCourse.vue" beforeDir="false" afterPath="$PROJECT_DIR$/ui/components/app/courses/CreateCourse.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ui/components/app/courses/DeleteCourse.vue" beforeDir="false" afterPath="$PROJECT_DIR$/ui/components/app/courses/DeleteCourse.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ui/components/app/courses/EditCourse.vue" beforeDir="false" afterPath="$PROJECT_DIR$/ui/components/app/courses/EditCourse.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ui/components/app/videos/CreateVideo.vue" beforeDir="false" afterPath="$PROJECT_DIR$/ui/components/app/videos/CreateVideo.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ui/components/app/videos/DeleteVideo.vue" beforeDir="false" afterPath="$PROJECT_DIR$/ui/components/app/videos/DeleteVideo.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ui/components/app/videos/EditVideo.vue" beforeDir="false" afterPath="$PROJECT_DIR$/ui/components/app/videos/EditVideo.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ui/composables/helpers.ts" beforeDir="false" afterPath="$PROJECT_DIR$/ui/composables/helpers.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ui/layouts/default.vue" beforeDir="false" afterPath="$PROJECT_DIR$/ui/layouts/default.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ui/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/ui/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ui/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/ui/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ui/pages/courses/[id]/index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/ui/pages/courses/[id]/index.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ui/pages/courses/[id]/videos/[video_id].vue" beforeDir="false" afterPath="$PROJECT_DIR$/ui/pages/courses/[id]/videos/[video_id].vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/app/Http/Resources/VideoResource.php" beforeDir="false" afterPath="$PROJECT_DIR$/api/app/Http/Resources/VideoResource.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/routes/api.php" beforeDir="false" afterPath="$PROJECT_DIR$/api/routes/api.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ui/components/app/courses/CourseCard.vue" beforeDir="false" afterPath="$PROJECT_DIR$/ui/components/app/courses/CourseCard.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ui/pages/index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/ui/pages/index.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ui/services/api/course/courseService.ts" beforeDir="false" afterPath="$PROJECT_DIR$/ui/services/api/course/courseService.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -222,6 +217,7 @@
       <recent name="\\wsl$\Ubuntu\home\marcelo\lets\fullstack-app\api\app\Console" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="\\wsl.localhost\Ubuntu\home\marcelo\lets\fullstack-app\ui\services\api\metrics" />
       <recent name="\\wsl.localhost\Ubuntu\home\marcelo\lets\fullstack-app\ui\services\api\course" />
     </key>
   </component>
@@ -264,7 +260,10 @@
       <workItem from="1708618421658" duration="5108000" />
       <workItem from="1708624806101" duration="2263000" />
       <workItem from="1708643930403" duration="7678000" />
-      <workItem from="1708652092930" duration="749000" />
+      <workItem from="1708652092930" duration="2121000" />
+      <workItem from="1708690319722" duration="1199000" />
+      <workItem from="1708692363825" duration="1411000" />
+      <workItem from="1708695654670" duration="1850000" />
     </task>
     <servers />
   </component>

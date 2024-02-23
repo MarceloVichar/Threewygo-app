@@ -4,9 +4,14 @@
       <h2 class="text-center font-bold text-2xl ">
         Cursos disponíveis
       </h2>
-      <button class="btn btn-primary" @click="createCourse">
-        Adicionar curso
-      </button>
+      <div class="flex gap-2 justify-between">
+        <button class="btn" @click="navigateTo('/metrics')">
+          Métricas
+        </button>
+        <button class="btn btn-primary" @click="createCourse">
+          Adicionar curso
+        </button>
+      </div>
     </div>
     <div v-if="pending" class="flex justify-center my-8">
       <Loader />

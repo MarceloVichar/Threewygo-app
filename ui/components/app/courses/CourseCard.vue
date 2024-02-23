@@ -29,7 +29,7 @@
       </p>
       <div class="w-full flex">
         <button class="btn btn-primary grow" @click="$emit('show', item)">
-          Assistir
+          Ver curso
         </button>
       </div>
     </div>

@@ -14,6 +14,7 @@ class VideoResource extends JsonResource
             'description' => $this->description,
             'image_url' => $this->getImageAttribute(),
             'video_url' => $this->getVideoAttribute(),
+            'video_size' => $this->getVideoSizeAttribute(),
             'created_at' => output_date_format($this->created_at),
             'updated_at' => output_date_format($this->updated_at),
         ];

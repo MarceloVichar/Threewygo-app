@@ -24,6 +24,8 @@ Route::apiResource('courses', \App\Http\Controllers\Course\CourseController::cla
 Route::post('courses/{course}', [\App\Http\Controllers\Course\CourseController::class, 'update'])
     ->name('courses.update');
 
+Route::get('metrics', [\App\Http\Controllers\Metrics\MetricsController::class, 'metrics']);
+
 Route::apiResource('videos', \App\Http\Controllers\Video\VideoController::class)
     ->except('update');
 
