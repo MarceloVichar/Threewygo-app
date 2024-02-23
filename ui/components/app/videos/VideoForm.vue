@@ -49,7 +49,7 @@
       <span
         class="text-sm mb-1 ml-2"
       >
-        Vídeo (1kb até 100mb, formato MP4)
+        Vídeo (1kb até 40mb, formato MP4)
       </span>
       <input
         type="file"

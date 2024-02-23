@@ -46,8 +46,6 @@ const form = reactive({
   },
 })
 
-console.log(form.data)
-
 const editVideo = (video: { data: { [x: string]: any; }; }) => {
   editing.value = true
   const formData = handleVideoData(video.data)

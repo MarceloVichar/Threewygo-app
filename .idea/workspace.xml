@@ -5,7 +5,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7e108146-28d2-409f-a2d4-393bf777bcf0" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ui/components/shared/VideoPlayer.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ui/pages/courses/[id]/videos/[video_id].vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/app/Http/Requests/VideoRequest.php" beforeDir="false" afterPath="$PROJECT_DIR$/api/app/Http/Requests/VideoRequest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ui/components/app/videos/EditVideo.vue" beforeDir="false" afterPath="$PROJECT_DIR$/ui/components/app/videos/EditVideo.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ui/components/app/videos/VideoForm.vue" beforeDir="false" afterPath="$PROJECT_DIR$/ui/components/app/videos/VideoForm.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ui/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/ui/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ui/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/ui/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ui/pages/courses/[id]/index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/ui/pages/courses/[id]/index.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ui/pages/courses/[id]/videos/[id].vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ui/stores/courses.ts" beforeDir="false" afterPath="$PROJECT_DIR$/ui/stores/courses.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -193,7 +203,7 @@
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_interpreter_path": "wsl://Ubuntu@/home/marcelo/.nvm/versions/node/v20.11.1/bin/node",
     "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "preferences.lookFeel",
+    "settings.editor.selected.configurable": "settings.javascript.linters.eslint",
     "ts.external.directory.path": "C:\\Program Files\\JetBrains\\PhpStorm 2023.3.4\\plugins\\javascript-impl\\jsLanguageServicesImpl\\external",
     "vue.rearranger.settings.migration": "true"
   }
@@ -244,6 +254,10 @@
       <workItem from="1708540816206" duration="5047000" />
       <workItem from="1708546061529" duration="1000" />
       <workItem from="1708546082584" duration="285000" />
+      <workItem from="1708613859639" duration="53000" />
+      <workItem from="1708618421658" duration="5108000" />
+      <workItem from="1708624806101" duration="2263000" />
+      <workItem from="1708643930403" duration="6519000" />
     </task>
     <servers />
   </component>

@@ -1,15 +1,18 @@
 <template>
   <div class="w-full">
-    <div class="flex flex-col sm:flex-row justify-between gap-2 items-center my-4 w-full">
-      <button class="btn w-32" @click="navigateTo('/')">
-        Voltar
-      </button>
-      <h2 class="font-bold text-2xl text-ellipsis overflow-hidden h-8 w-full text-center" :title="data?.title">
+    <div class="flex flex-col sm:flex-row justify-between gap-2 sm:items-center my-4 w-full">
+      <h2 class="font-bold text-2xl text-ellipsis overflow-hidden h-8 text-center" :title="data?.title">
         {{ data?.title }}
       </h2>
-      <button class="btn btn-primary" @click="createVideo">
-        Adicionar vídeo
-      </button>
+      <div class="flex gap-2 justify-between">
+        <button class="btn  sm:w-32" @click="navigateTo('/')">
+          Voltar
+        </button>
+
+        <button class="btn btn-primary w-auto" @click="createVideo">
+          Adicionar vídeo
+        </button>
+      </div>
     </div>
     <div v-if="pending" class="flex justify-center my-8">
       <Loader />
@@ -55,7 +58,7 @@ const modal = reactive({
 })
 
 async function fetchVideos() {
-  await courseStore.ensureCourse(route.params?.id?.toString())
+  await courseStore.getCourse(route.params?.id?.toString())
   return courseStore.currentCourse
 }
 

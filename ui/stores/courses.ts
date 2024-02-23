@@ -11,7 +11,7 @@ export const useCourses = defineStore('courses', {
       this.currentCourse = await getCourse(id)
     },
     getVideoById(id: string|number): GetVideoData | null {
-      return this.currentCourse?.videos?.find((video) => video.id === id) || null
+      return this.currentCourse?.videos?.find((video) => video.id === parseInt(id.toString())) || null
     },
     async ensureCourse(id: string | number) {
       if (this.currentCourse?.id !== parseInt(id.toString())) {
