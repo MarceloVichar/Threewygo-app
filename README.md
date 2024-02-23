@@ -55,7 +55,8 @@ $> docker compose stop
 Por padrão, a API já vem o servidor ativo quando os contâineres são iniciados. Para subir o ambiente da interface, rode o seguinte comando:
 
 ```bash
-$> docker compose exec ui npm i && npm run dev
+$> docker compose exec ui npm i
+$> docker compose exec ui npm run dev
 ```
 
 Agora, é necessário apenas acessar a porta que vc destinou a interface no arquivo `.env`, por padrão: `localhost:3001`
