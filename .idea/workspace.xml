@@ -5,17 +5,22 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7e108146-28d2-409f-a2d4-393bf777bcf0" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/api/app/Actions/Metrics/GetCoursesMetricsAction.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ui/components/app/metrics/CoursesTable.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ui/components/shared/CustomTable.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ui/pages/metrics/index.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ui/services/api/metrics/GetMetricsData.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/database/factories/CourseFactory.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/database/factories/VideoFactory.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/tests/Cases/TestCaseFeature.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/tests/Cases/TestCaseUnit.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/tests/Feature/Courses/CourseTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/tests/Feature/Metrics/MetricsTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/tests/Feature/Videos/VideoTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/tests/Unit/Actions/Course/CreateCourseActionTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/tests/Unit/Actions/Course/UpdateCourseActionTest.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/app/Http/Resources/VideoResource.php" beforeDir="false" afterPath="$PROJECT_DIR$/api/app/Http/Resources/VideoResource.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/routes/api.php" beforeDir="false" afterPath="$PROJECT_DIR$/api/routes/api.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ui/components/app/courses/CourseCard.vue" beforeDir="false" afterPath="$PROJECT_DIR$/ui/components/app/courses/CourseCard.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ui/pages/index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/ui/pages/index.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ui/services/api/course/courseService.ts" beforeDir="false" afterPath="$PROJECT_DIR$/ui/services/api/course/courseService.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/app/Actions/Course/DeleteCourseAction.php" beforeDir="false" afterPath="$PROJECT_DIR$/api/app/Actions/Course/DeleteCourseAction.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/app/Models/Course.php" beforeDir="false" afterPath="$PROJECT_DIR$/api/app/Models/Course.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/app/Models/Video.php" beforeDir="false" afterPath="$PROJECT_DIR$/api/app/Models/Video.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/database/seeders/DatabaseSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/api/database/seeders/DatabaseSeeder.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/tests/Feature/ExampleTest.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/tests/Unit/ExampleTest.php" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -204,7 +209,7 @@
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
     &quot;nodejs_interpreter_path&quot;: &quot;wsl://Ubuntu@/home/marcelo/.nvm/versions/node/v20.11.1/bin/node&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;settings.javascript.linters.eslint&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;,
     &quot;ts.external.directory.path&quot;: &quot;C:\\Program Files\\JetBrains\\PhpStorm 2023.3.4\\plugins\\javascript-impl\\jsLanguageServicesImpl\\external&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
@@ -263,7 +268,9 @@
       <workItem from="1708652092930" duration="2121000" />
       <workItem from="1708690319722" duration="1199000" />
       <workItem from="1708692363825" duration="1411000" />
-      <workItem from="1708695654670" duration="1850000" />
+      <workItem from="1708695654670" duration="6471000" />
+      <workItem from="1708704917792" duration="5394000" />
+      <workItem from="1708712718041" duration="2745000" />
     </task>
     <servers />
   </component>

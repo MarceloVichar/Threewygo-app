@@ -2,6 +2,7 @@
 
 namespace App\Models;
 
+use Database\Factories\CourseFactory;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use Spatie\MediaLibrary\HasMedia;
@@ -16,6 +17,11 @@ class Course extends Model implements HasMedia
         'start_date',
         'end_date',
     ];
+
+     protected static function newFactory()
+    {
+        return CourseFactory::new();
+    }
 
     public function videos()
     {

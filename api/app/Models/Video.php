@@ -2,6 +2,8 @@
 
 namespace App\Models;
 
+use Database\Factories\CourseFactory;
+use Database\Factories\VideoFactory;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use Spatie\MediaLibrary\HasMedia;
@@ -15,6 +17,11 @@ class Video extends Model implements HasMedia
         'description',
         'course_id',
     ];
+
+    protected static function newFactory()
+    {
+        return VideoFactory::new();
+    }
 
     public function course()
     {

@@ -10,7 +10,6 @@ class DeleteCourseAction
 {
     public function execute(Course $course)
     {
-        try {
             DB::beginTransaction();
 
             $course->clearMediaCollection('course_images');
@@ -24,9 +23,5 @@ class DeleteCourseAction
                 ->delete();
 
             DB::commit();
-        } catch (\Exception $exception) {
-            DB::rollBack();
-            report($exception);
-        }
     }
 }
