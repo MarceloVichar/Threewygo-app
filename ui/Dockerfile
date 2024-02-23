@@ -12,6 +12,4 @@ COPY --chown=node:node .. .
 
 RUN npm install
 
-#ENTRYPOINT ["npm", "run", "dev"]
-
-CMD ["tail", "-f", "/dev/null"]
+CMD ["npm", "run", "dev"]

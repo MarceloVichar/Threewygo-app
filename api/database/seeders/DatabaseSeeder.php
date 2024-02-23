@@ -25,7 +25,12 @@ class DatabaseSeeder extends Seeder
             'description' => 'Video de realidade virtual 1'
         ]);
 
-        $video->copyMedia(database_path('seeders/files/imagem_exemplo.png'))->toMediaCollection('video_images');
-        $video->copyMedia(database_path('seeders/files/video_exemplo.mp4'))->toMediaCollection('video_files');
+        $video->copyMedia(database_path('seeders/files/imagem_exemplo.png'))
+             ->usingFileName("video-image-$course->id.png")
+            ->toMediaCollection('video_images');
+
+        $video->copyMedia(database_path('seeders/files/video_exemplo.mp4'))
+             ->usingFileName("video-$course->id.mp4")
+            ->toMediaCollection('video_files');
     }
 }
