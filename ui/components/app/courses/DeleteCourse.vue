@@ -31,9 +31,11 @@ const removeCourse = () => {
       deleting.value = false
       emit('close')
       emit('refresh')
+      useNotify('success', 'Curso excluído com sucesso')
     })
     .catch(() => {
       deleting.value = false
+      useNotify('error', 'Erro ao excluir curso')
     })
 }
 </script>

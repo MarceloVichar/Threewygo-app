@@ -36,4 +36,9 @@ class Video extends Model implements HasMedia
     {
         return optional($this->getFirstMedia('video_files'))->getFullUrl();
     }
+
+    public function getVideoSizeAttribute()
+    {
+        return optional($this->getFirstMedia('video_files'))->size;
+    }
 }

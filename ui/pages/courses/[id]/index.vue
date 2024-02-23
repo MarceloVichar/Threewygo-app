@@ -59,6 +59,9 @@ const modal = reactive({
 
 async function fetchVideos() {
   await courseStore.getCourse(route.params?.id?.toString())
+    .catch(() => {
+      useNotify('error', 'Erro ao buscar curso')
+    })
   return courseStore.currentCourse
 }
 

@@ -1,7 +1,7 @@
 <template>
   <div>
     <div class="z-10 h-16 px-2 border-b-2 border-primary bg-base-100 shadow fixed w-full flex justify-between items-center">
-      <div @click="navigateTo('/')">
+      <div class="cursor-pointer" @click="navigateTo('/')">
         <img src="/logo.png" class="h-6 object-cover" alt="logo">
       </div>
       <div>

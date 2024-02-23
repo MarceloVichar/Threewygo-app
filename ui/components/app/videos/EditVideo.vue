@@ -54,9 +54,11 @@ const editVideo = (video: { data: { [x: string]: any; }; }) => {
     .then(() => {
       emit('close')
       emit('refresh')
+      useNotify('success', 'Vídeo editado com sucesso')
     })
     .catch((error) => {
       form.errors = error.response.data.errors;
+      useNotify('error', 'Erro ao editar vídeo')
     })
     .finally(() => {
       editing.value = false

@@ -66,6 +66,9 @@ async function fetchCourses() {
     perPage: 12,
     page: currentPage.value,
     'filter[end_date_start]': useDayjs()().subtract(1, 'day').startOf('day').toISOString()})
+    .catch(() => {
+      useNotify('error', 'Erro ao buscar cursos')
+    })
 }
 
 const {pending, data, refresh} = useLazyAsyncData('courses', fetchCourses)

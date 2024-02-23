@@ -16,7 +16,7 @@
 </template>
 
 <script setup lang="ts">
-import {createVideo as createVideoForm} from '~/services/api/video/videoService';
+import {createVideo as createVideoService} from '~/services/api/video/videoService';
 import Modal from '~/components/shared/Modal.vue';
 import VideoForm from '~/components/app/videos/VideoForm.vue';
 
@@ -41,13 +41,15 @@ const createVideo = (video: { data: { [x: string]: any; }; }) => {
   creating.value = true
   const formData = handleVideoData(video.data)
 
-  createVideoForm(formData)
+  createVideoService(formData)
     .then(() => {
       emit('close')
       emit('refresh')
+      useNotify('success', 'Vídeo adicionado com sucesso')
     })
     .catch((error) => {
       form.errors = error.response.data.errors;
+      useNotify('error', 'Erro ao adicionar vídeo')
     })
     .finally(() => {
       creating.value = false

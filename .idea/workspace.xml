@@ -5,17 +5,22 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7e108146-28d2-409f-a2d4-393bf777bcf0" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/ui/components/shared/VideoPlayer.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ui/pages/courses/[id]/videos/[video_id].vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ui/plugins/notify.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/app/Http/Requests/VideoRequest.php" beforeDir="false" afterPath="$PROJECT_DIR$/api/app/Http/Requests/VideoRequest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/app/Models/Video.php" beforeDir="false" afterPath="$PROJECT_DIR$/api/app/Models/Video.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ui/components/app/courses/CreateCourse.vue" beforeDir="false" afterPath="$PROJECT_DIR$/ui/components/app/courses/CreateCourse.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ui/components/app/courses/DeleteCourse.vue" beforeDir="false" afterPath="$PROJECT_DIR$/ui/components/app/courses/DeleteCourse.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ui/components/app/courses/EditCourse.vue" beforeDir="false" afterPath="$PROJECT_DIR$/ui/components/app/courses/EditCourse.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ui/components/app/videos/CreateVideo.vue" beforeDir="false" afterPath="$PROJECT_DIR$/ui/components/app/videos/CreateVideo.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ui/components/app/videos/DeleteVideo.vue" beforeDir="false" afterPath="$PROJECT_DIR$/ui/components/app/videos/DeleteVideo.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ui/components/app/videos/EditVideo.vue" beforeDir="false" afterPath="$PROJECT_DIR$/ui/components/app/videos/EditVideo.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ui/components/app/videos/VideoForm.vue" beforeDir="false" afterPath="$PROJECT_DIR$/ui/components/app/videos/VideoForm.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ui/composables/helpers.ts" beforeDir="false" afterPath="$PROJECT_DIR$/ui/composables/helpers.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ui/layouts/default.vue" beforeDir="false" afterPath="$PROJECT_DIR$/ui/layouts/default.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ui/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/ui/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ui/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/ui/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ui/pages/courses/[id]/index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/ui/pages/courses/[id]/index.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ui/pages/courses/[id]/videos/[id].vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ui/stores/courses.ts" beforeDir="false" afterPath="$PROJECT_DIR$/ui/stores/courses.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ui/pages/courses/[id]/videos/[video_id].vue" beforeDir="false" afterPath="$PROJECT_DIR$/ui/pages/courses/[id]/videos/[video_id].vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ui/pages/index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/ui/pages/index.vue" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -186,28 +191,29 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "main",
-    "javascript.nodejs.core.library.configured.version": "20.10.0",
-    "javascript.nodejs.core.library.typings.version": "20.10.8",
-    "last_opened_file_path": "//wsl.localhost/Ubuntu/home/marcelo/lets/fullstack-app/ui",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.standard": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.standard": "",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_interpreter_path": "wsl://Ubuntu@/home/marcelo/.nvm/versions/node/v20.11.1/bin/node",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "settings.javascript.linters.eslint",
-    "ts.external.directory.path": "C:\\Program Files\\JetBrains\\PhpStorm 2023.3.4\\plugins\\javascript-impl\\jsLanguageServicesImpl\\external",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;javascript.nodejs.core.library.configured.version&quot;: &quot;20.10.0&quot;,
+    &quot;javascript.nodejs.core.library.typings.version&quot;: &quot;20.10.8&quot;,
+    &quot;js.last.introduce.type&quot;: &quot;CONST&quot;,
+    &quot;last_opened_file_path&quot;: &quot;//wsl.localhost/Ubuntu/home/marcelo/lets/fullstack-app/ui&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.standard&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.standard&quot;: &quot;&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_interpreter_path&quot;: &quot;wsl://Ubuntu@/home/marcelo/.nvm/versions/node/v20.11.1/bin/node&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;settings.javascript.linters.eslint&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;C:\\Program Files\\JetBrains\\PhpStorm 2023.3.4\\plugins\\javascript-impl\\jsLanguageServicesImpl\\external&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="\\wsl.localhost\Ubuntu\home\marcelo\lets\fullstack-app\ui" />
@@ -257,7 +263,8 @@
       <workItem from="1708613859639" duration="53000" />
       <workItem from="1708618421658" duration="5108000" />
       <workItem from="1708624806101" duration="2263000" />
-      <workItem from="1708643930403" duration="6519000" />
+      <workItem from="1708643930403" duration="7678000" />
+      <workItem from="1708652092930" duration="749000" />
     </task>
     <servers />
   </component>

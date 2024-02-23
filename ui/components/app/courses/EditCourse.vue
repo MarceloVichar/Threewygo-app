@@ -50,9 +50,11 @@ const editCourse = (course: { data: { [x: string]: any; }; }) => {
     .then(() => {
       emit('close')
       emit('refresh')
+      useNotify('success', 'Curso editado com sucesso')
     })
     .catch((error) => {
       form.errors = error.response.data.errors;
+      useNotify('error', 'Erro ao editar curso')
     })
     .finally(() => {
       editing.value = false

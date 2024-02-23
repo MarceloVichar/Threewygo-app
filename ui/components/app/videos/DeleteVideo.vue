@@ -31,9 +31,11 @@ const removeVideo = () => {
       deleting.value = false
       emit('close')
       emit('refresh')
+      useNotify('success', 'Vídeo excluído com sucesso')
     })
     .catch(() => {
       deleting.value = false
+      useNotify('error', 'Erro ao excluir vídeo')
     })
 }
 </script>

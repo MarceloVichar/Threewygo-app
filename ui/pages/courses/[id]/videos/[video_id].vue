@@ -11,7 +11,7 @@
       </div>
     </div>
     <div class="flex flex-col lg:flex-row gap-2">
-      <div class="grow p-2 border rounded ">
+      <div class="w-full p-2 border rounded ">
         <div class="w-full aspect-video">
           <VideoPlayer v-if="dataIsReady" :options="videoOptions" />
         </div>

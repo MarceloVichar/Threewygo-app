@@ -42,9 +42,11 @@ const createCourse = (course: { data: { [x: string]: any; }; }) => {
     .then(() => {
       emit('close')
       emit('refresh')
+      useNotify('success', 'Curso criado com sucesso')
     })
     .catch((error) => {
       form.errors = error.response.data.errors;
+      useNotify('error', 'Não foi possível criar o curso')
     })
     .finally(() => {
       creating.value = false
